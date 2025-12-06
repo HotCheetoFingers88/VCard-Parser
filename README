@@ -1,0 +1,80 @@
+# CIS*2750 Assignment 3 - Testing Checklist
+
+
+### 1. DB Login View (10 marks)
+
+- User can enter all credentials
+- Successfully establishes a connection to the database using the entered credentials
+- Displays an error if the DB connection fails (e.g., incorrect credentials)
+- Ensures tables in the database are created (only if they don't already exist)
+
+### 2 Main View (30 marks)
+
+- Displays all required details in a table format as specified in Module 1
+- Does not display invalid files
+- Files are clickable
+- Correctly updates when a file is modified or created
+- The database tables are populated correctly with file information
+- Exits the program properly
+
+### 3. Card Detail View (30 marks)
+
+- Displays correct information for the selected file
+- Information can be modified as stated in Module 1
+- Changes are reflected on both the disk and in the database tables
+- Exits back to the main view correctly
+
+### 4. Create vCard (10 marks)
+
+- Creates a new Card object and saves it to the vCard file
+- User can input all details via forms
+- Validates user input to prevent creating invalid vCard files
+- Updates the database with the new vCard file
+
+### 5. DB View (20 marks)
+
+- Runs the two required queries
+- Correctly displays information stored in the database tables
+- Exits back to the main view correctly
+
+### 6. Code Compilation:
+  - Ensure your code compiles successfully using the provided Makefile
+  - The Makefile should create a shared library (.so file) that will be used by `A3main.py`
+  - Your code must run inside the Docker container provided for grading
+  - Verify that everything works as expected within the container
+
+### 7. Clean up:
+  - Delete your compiled shared library (.so file) before submission
+  - Recompile the shared library using your Makefile
+  - Test the full application to ensure all functionality is working in the Docker container
+
+Thank you!!
+                             .-----.
+                            /7  .  (
+                           /   .-.  \
+                          /   /   \  \
+                         / `  )   (   )
+                        / `   )   ).  \
+                      .'  _.   \_/  . |
+     .--.           .' _.' )`.        |
+    (    `---...._.'   `---.'_)    ..  \
+     \            `----....___    `. \  |
+      `.           _ ----- _   `._  )/  |
+        `.       /"  \   /"  \`.  `._   |
+          `.    ((O)` ) ((O)` ) `.   `._\
+            `-- '`---'   `---' )  `.    `-.
+               /                  ` \      `-.
+             .'                      `.       `.
+            /                     `  ` `.       `-.
+     .--.   \ ===._____.======. `    `   `. .___.--`     .''''.
+    ' .` `-. `.                )`. `   ` ` \          .' . '  8)
+   (8  .  ` `-.`.               ( .  ` `  .`\      .'  '    ' /
+    \  `. `    `-.               ) ` .   ` ` \  .'   ' .  '  /
+     \ ` `.  ` . \`.    .--.     |  ` ) `   .``/   '  // .  /
+      `.  ``. .   \ \   .-- `.  (  ` /_   ` . / ' .  '/   .'
+        `. ` \  `  \ \  '-.   `-'  .'  `-.  `   .  .'/  .'
+          \ `.`.  ` \ \    ) /`._.`       `.  ` .  .'  /
+           |  `.`. . \ \  (.'               `.   .'  .'
+        __/  .. \ \ ` ) \                     \.' .. \__
+ .-._.-'     '"  ) .-'   `.                   (  '"     `-._.--.
+(_________.-====' / .' /\_)`--..__________..-- `====-. _________)
